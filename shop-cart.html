@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SportStore | ECommerce</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+	
+<!-----buat desain header------->     
+<div class="container">
+    <div class="navbar">
+        <div class="logo"> 
+            <img src="image/LOGO.png" width="175px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home </a></li>
+                <li><a href="">Produk </a></li>
+                <li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Account </a></li>
+            </ul>
+        </nav>
+            <img href="" src="image/bag.png" width="25px">
+            <img href="" src="image/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+      
+    </div>
+</div>   
+
+<!---------Cart Details----->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+            <div class="cart-info">
+                <img src="image/latest8.png">
+                <div>
+                    <p>Nike Sportwear Trousers</p>
+                    <small> Price: Rp. 799.000,-</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rp. 799.000,-</td>
+        </tr>
+         <tr>
+            <td>
+            <div class="cart-info">
+                <img src="image/latest7.png">
+                <div>
+                    <p>Jordan Artist Series by Jacob Rochester</p>
+                    <small> Price: Rp. 1.169.000,-</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rp. 1.169.000,-</td>
+        </tr>
+         <tr>
+            <td>
+            <div class="cart-info">
+                <img src="image/latest4.png">
+                <div>
+                    <p>Nike Air Force 1 '07 Premium</p>
+                    <small> Price: Rp. 2.030.000,-</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rp. 2.030.000,-</td>
+        </tr>
+    </table>
+     <div class="total-price">
+        <table>
+            <tr>
+                <td>Sub Total: </td>
+                <td>Rp. 3.998.000,- </td>
+            </tr>
+            <tr>
+                <td>Pajak PPn 10%: </td>
+                <td>Rp. 399.800,- </td>
+            </tr>
+            <tr>
+                <td>Total: </td>
+                <td>Rp. 3.598.200,- </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!---------footer----->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> Download Aplikasi Kami </h3>
+                <p>Download Aplikasi kami untuk Smart Phone <br> dengan Sistem Operasi iOS dan Android</p>
+                <div class="app-logo">
+                    <img src="image/app-store.png">
+                    <img src="image/play-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/LOGO2.png">
+                <p>Tujuan kami adalah memberikan kenyamanan berbelanja
+                    <br> dan produk olahraga terbaru bagi anda</p>
+            </div>
+            <div class="footer-col-3">
+                <h3> Link Bermanfaat</h3>
+                <ul>
+                    <li>Kupon Diskon</li>
+                    <li>Blog Informasi Produk</li>
+                    <li>Aturan Pengembalian</li>
+                    <li>Metode Pembayaran</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+
+                </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyrigt">Copyright 2022 - Gibran Ganteng</p>
+      </div>
+</div>
+<!----java script toggle menu---->
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px")
+                }
+            MenuItems.style.maxHeight = "200px"
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+    
+</body>
+</html>
+   
